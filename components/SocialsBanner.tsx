@@ -1,0 +1,40 @@
+// react icons
+import { FaLinkedin, FaYoutube, FaTelegram, FaInstagram } from "react-icons/fa";
+
+export default function SocialsBanner() {
+  return (
+    <div className="bg-socials bg-center bg-cover shadow-custom">
+      <div className="flex flex-col items-center justify-center gap-12 py-16">
+        <h1 className="font-medium text-4xl sm:text-5xl text-center tracking-[2px]">
+          Connect with Us on Social Media
+        </h1>
+        <div className="flex flex-wrap items-center justify-center gap-12 px-4">
+          <a
+            className="xl:hover:text-main transition-all duration-300"
+            href="#!"
+          >
+            <FaInstagram size={60} />
+          </a>
+          <a
+            className="xl:hover:text-main transition-all duration-300"
+            href="#!"
+          >
+            <FaLinkedin size={60} />
+          </a>
+          <a
+            className="xl:hover:text-main transition-all duration-300"
+            href="#!"
+          >
+            <FaYoutube size={60} />
+          </a>
+          <a
+            className="xl:hover:text-main transition-all duration-300"
+            href="#!"
+          >
+            <FaTelegram size={50} />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}

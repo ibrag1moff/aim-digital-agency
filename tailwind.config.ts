@@ -9,8 +9,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        main: "#5929BC",
+        secondary: "#16151b",
+      },
+      backgroundImage: {
+        hero: 'url("/hero-image.jpg")',
+        section: 'url("/section.jpg")',
+        services: "url(/services-bg.jpg)",
+        footer: 'url("/footer-bg.jpg")',
+        socials: 'url("/socials-banner.jpg")',
+      },
+      boxShadow: {
+        custom: "0 0 10px rgba(0, 0, 0, 0.4)",
+      },
+      screens: {
+        xs: "500px",
       },
     },
   },
