@@ -1,17 +1,17 @@
 "use client";
+// next
+import { ReactNode } from "react";
+
 // react-icons
 import { GrClose } from "react-icons/gr";
 
 // context
 import { usePopup } from "@/context/popupContext";
 
-// components
-import ConsultationForm from "./ConsultationForm";
-
 // framer motion
 import { motion } from "framer-motion";
 
-export default function Popup() {
+export default function Popup({ children }: { children: ReactNode }) {
   const { popupActive, hidePopup } = usePopup();
 
   return (
@@ -35,15 +35,7 @@ export default function Popup() {
         >
           <GrClose size={30} color="white" />
         </button>
-        <div className="flex flex-col items-center justify-center gap-12">
-          <div className="flex flex-col text-center gap-1 text-black">
-            <h1 className="text-4xl md:text-5xl font-bold">Still Deciding?</h1>
-            <p className="text-xl font-medium">
-              Discuss your goals and get tailored digital solutions!
-            </p>
-          </div>
-          <ConsultationForm btnTitle="Submit" />
-        </div>
+        {children}
       </motion.div>
     </div>
   );

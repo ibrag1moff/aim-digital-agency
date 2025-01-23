@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 
 // react icons
 import { BiMenuAltRight } from "react-icons/bi";
-import { FaInstagram } from "react-icons/fa";
 import { LuPhoneCall } from "react-icons/lu";
 import { GrClose } from "react-icons/gr";
 import { IoMdContact } from "react-icons/io";
@@ -19,6 +18,7 @@ import { usePopup } from "@/context/popupContext";
 
 // components
 import Popup from "./Popup";
+import ConsultationForm from "./ConsultationForm";
 
 export default function Nav() {
   const [languageDropdown, setLanguageDropdown] = useState<boolean>(false);
@@ -45,9 +45,36 @@ export default function Nav() {
     },
   ];
 
+  const navLinks = [
+    {
+      id: 1,
+      title: "Home",
+      href: "/",
+    },
+    {
+      id: 2,
+      title: "Services",
+      href: "/services",
+    },
+    {
+      id: 3,
+      title: "About us",
+      href: "/about",
+    },
+    {
+      id: 4,
+      title: "Contact us",
+      href: "/contact",
+    },
+  ];
+
   useEffect(() =>
     window.addEventListener("click", () => setLanguageDropdown(false))
   );
+
+  useEffect(() => {
+    window.addEventListener("click", () => setNavActive(false));
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -244,93 +271,29 @@ export default function Nav() {
           {/* desktop nav end */}
 
           {/* mobile nav */}
+
           <div
             className={
               navActive
-                ? "absolute top-0 left-0 bottom-0 right-0 bg-white/80 z-20"
-                : ""
+                ? "fixed top-0 left-0 bottom-0 right-0 w-full h-1/2 border rounded-xl bg-black transition-all duration-300"
+                : "fixed top-[-100%] left-0 bottom-0 right-0 w-full h-1/2 border rounded-xl bg-black transition-all duration-300"
             }
+            onClick={(e) => e.stopPropagation()}
           >
-            <div
-              className={
-                navActive
-                  ? "absolute left-0 top-0 right-0 bottom-0 z-30 w-[80%] h-full bg-white border shadow transition-all duration-500 rounded-r-xl"
-                  : "absolute left-[-100%] top-0 right-0 bottom-0 z-10 w-[80%] h-full bg-white border shadow transition-all duration-500 rounded-r-xl"
-              }
-            >
-              <div className="flex flex-col gap-12 p-8">
-                <Link onClick={() => setNavActive(false)} href="/">
-                  <img className="w-[200px]" src="/aim-logo.svg" alt="Logo" />
+            <div className="flex flex-col items-center justify-center gap-4 h-full">
+              {navLinks.map((link) => (
+                <Link
+                  className="font-semibold font-2xl"
+                  key={link.id}
+                  href={link.href}
+                >
+                  {link.title}
                 </Link>
-
-                <div className="flex flex-col gap-6">
-                  <Link
-                    onClick={() => setNavActive(false)}
-                    className="font-semibold text-xl border-b pb-2"
-                    href="/"
-                  >
-                    Home
-                  </Link>
-                  <Link
-                    onClick={() => setNavActive(false)}
-                    className="font-semibold text-xl border-b pb-2"
-                    href="/"
-                  >
-                    Services
-                  </Link>
-                  <Link
-                    onClick={() => setNavActive(false)}
-                    className="font-semibold text-xl border-b pb-2"
-                    href="/"
-                  >
-                    About us
-                  </Link>
-                  <Link
-                    onClick={() => setNavActive(false)}
-                    className="font-semibold text-xl border-b pb-2"
-                    href="/"
-                  >
-                    Contact us
-                  </Link>
-                </div>
-
-                <button className="flex items-center justify-center gap-[10px] bg-gradient-to-r from-[#8E2DE2] to-[#5929BC] font-bold text-lg text-white py-3 px-[20px] rounded-lg">
-                  <span>
-                    <svg
-                      width="19"
-                      height="25"
-                      viewBox="0 0 19 25"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7.98906 1.45996L8.73906 0.419922C8.92656 0.15625 9.22656 0 9.54062 0C10.0891 0 10.5391 0.46875 10.5391 1.04004V2.12402C10.5391 2.76367 10.7922 3.37891 11.2375 3.81836L15.2078 7.76367C17.4953 10.0391 18.7891 13.1934 18.7891 16.4893C18.7891 21.1914 15.1328 25 10.6187 25H9.78906C4.82031 25 0.789062 20.8008 0.789062 15.625V15.4395C0.789062 13.0566 1.69844 10.7715 3.31563 9.08691L3.47969 8.91602C3.67656 8.71094 3.94844 8.59375 4.22969 8.59375C4.81563 8.59375 5.28906 9.08691 5.28906 9.69727V14.0625C5.28906 15.7861 6.63438 17.1875 8.28906 17.1875C9.94375 17.1875 11.2891 15.7861 11.2891 14.0625V13.8721C11.2891 12.9932 10.9516 12.1484 10.3563 11.5283L8.54688 9.64355C7.42188 8.47168 6.78906 6.875 6.78906 5.21484C6.78906 3.8623 7.21094 2.53906 7.98906 1.45996Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </span>
-                  Free consultation
-                </button>
-
-                <div className="flex flex-wrap items-center justify-between sm:justify-evenly">
-                  <button className="border p-2 rounded-full">
-                    <FaInstagram fill="#5929BC" size={20} />
-                  </button>
-                  <button className="border p-2 rounded-full">
-                    <FaInstagram fill="#5929BC" size={20} />
-                  </button>
-                  <button className="border p-2 rounded-full">
-                    <FaInstagram fill="#5929BC" size={20} />
-                  </button>
-                  <button className="border p-2 rounded-full">
-                    <FaInstagram fill="#5929BC" size={20} />
-                  </button>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
-          {/* mobile nav end */}
         </div>
+        {/* mobile nav end */}
         <div className="flex items-center gap-4 sm:gap-[25px] relative">
           <button onClick={() => setLanguageDropdown(!languageDropdown)}>
             <img className="" src="/usa.svg" alt="Language Switcher" />
@@ -378,7 +341,19 @@ export default function Nav() {
           </button>
 
           {/* popup  */}
-          <Popup />
+          <Popup>
+            <div className="flex flex-col items-center justify-center gap-12">
+              <div className="flex flex-col text-center gap-1 text-black">
+                <h1 className="text-4xl md:text-5xl font-bold">
+                  Still Deciding?
+                </h1>
+                <p className="text-xl font-medium">
+                  Discuss your goals and get tailored digital solutions!
+                </p>
+              </div>
+              <ConsultationForm btnTitle="Submit" />
+            </div>
+          </Popup>
           {/* popup end */}
 
           <button
