@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 interface SectionPageProps {
   title: string;
-  text: string;
+  text?: string;
 }
 
 export default function SectionPage({ title, text }: SectionPageProps) {

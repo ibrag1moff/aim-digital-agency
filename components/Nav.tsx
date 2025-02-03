@@ -1,7 +1,7 @@
 "use client";
 // next
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link } from "@/i18n/routing";
+import { usePathname, useRouter, useParams } from "next/navigation";
 import { useState, useEffect } from "react";
 
 // react icons
@@ -20,53 +20,56 @@ import { usePopup } from "@/context/popupContext";
 import Popup from "./Popup";
 import ConsultationForm from "./ConsultationForm";
 
+// next-intl
+import { useTranslations } from "next-intl";
+
+// types
+import { NavLink } from "@/types/interfaces";
+
 export default function Nav() {
+  // dropdown states
   const [languageDropdown, setLanguageDropdown] = useState<boolean>(false);
   const [navActive, setNavActive] = useState<boolean>(false);
 
+  // state for adding additional styles while scrolling
   const [navScroll, setNavScroll] = useState<boolean>(false);
 
+  // state for active link in navbar
   const [activeLink, setActiveLink] = useState<string>("/");
 
+  // to controll url
   const pathname = usePathname();
+  const router = useRouter();
+  const params = useParams();
 
+  // function for showing popup when needed
   const { showPopup } = usePopup();
 
-  const langugesList = [
+  // list of languages
+  const languagesList = [
     {
       id: 1,
       icon: "/usa.svg",
       title: "English",
+      language: "en",
     },
     {
       id: 2,
       icon: "/azerbaijan.svg",
       title: "Azerbaijani",
+      language: "az",
     },
   ];
 
-  const navLinks = [
-    {
-      id: 1,
-      title: "Home",
-      href: "/",
-    },
-    {
-      id: 2,
-      title: "Services",
-      href: "/services",
-    },
-    {
-      id: 3,
-      title: "About us",
-      href: "/about",
-    },
-    {
-      id: 4,
-      title: "Contact us",
-      href: "/contact",
-    },
-  ];
+  // next-intl
+  const t = useTranslations("Navbar");
+  const tConsultation = useTranslations("Consultation");
+  const navLinks = t.raw("links");
+
+  // function for switching language
+  function switchLanguage(locale: string) {
+    router.push(`/${locale}`);
+  }
 
   useEffect(() =>
     window.addEventListener("click", () => setLanguageDropdown(false))
@@ -199,7 +202,7 @@ export default function Nav() {
               }
               href="/"
             >
-              Home
+              {t("home")}
             </Link>
             <Link
               onClick={() => setActiveLink("/services")}
@@ -212,7 +215,7 @@ export default function Nav() {
               }
               href="/services"
             >
-              Services
+              {t("services")}
             </Link>
             <div className="relative z-10 group">
               <button
@@ -220,7 +223,7 @@ export default function Nav() {
                   navScroll ? "text-black" : "text-white"
                 } text-lg xl:hover:text-main transition-all duration-100 tracking-[3px]`}
               >
-                Who We Are?
+                {t("whoweare")}
                 <span>
                   <svg
                     width="9"
@@ -255,14 +258,14 @@ export default function Nav() {
                     href="/about"
                   >
                     <IoMdContact size={30} />
-                    About us
+                    {t("about")}
                   </Link>
                   <Link
                     className="flex items-center gap-4 text-lg pb-2 tracking-[2px] text-black xl:hover:text-main"
                     href="/contact"
                   >
                     <LuPhoneCall size={25} />
-                    Contact us
+                    {t("contact")}
                   </Link>
                 </div>
               </div>
@@ -281,7 +284,7 @@ export default function Nav() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex flex-col items-center justify-center gap-4 h-full">
-              {navLinks.map((link) => (
+              {navLinks.map((link: NavLink) => (
                 <Link
                   className="font-semibold font-2xl"
                   key={link.id}
@@ -296,7 +299,10 @@ export default function Nav() {
         {/* mobile nav end */}
         <div className="flex items-center gap-4 sm:gap-[25px] relative">
           <button onClick={() => setLanguageDropdown(!languageDropdown)}>
-            <img className="" src="/usa.svg" alt="Language Switcher" />
+            <img
+              src={params.locale === "az" ? "azerbaijan.svg" : "usa.svg"}
+              alt={String(params.locale)}
+            />
           </button>
           <div
             onClick={(e) => e.stopPropagation()}
@@ -306,18 +312,18 @@ export default function Nav() {
                 : "hidden"
             }
           >
-            <div className="flex items-center gap-4 hover:bg-[#e5e5e5] transition-all duration-300 cursor-pointer px-1">
-              <img src="/usa.svg" alt="Language Switcher" />
-              <span className="uppercase font-bold text-xl text-main tracking-[2px]">
-                English
-              </span>
-            </div>
-            <div className="flex items-center gap-4 hover:bg-[#e5e5e5] transition-all duration-300 cursor-pointer px-1">
-              <img src="/azerbaijan.svg" alt="Language Switcher" />
-              <span className="uppercase font-bold text-xl text-main tracking-[2px]">
-                Azerbaijani
-              </span>
-            </div>
+            {languagesList.map((language) => (
+              <div
+                onClick={() => switchLanguage(language.language)}
+                key={language.id}
+                className="flex items-center gap-4 hover:bg-[#e5e5e5] transition-all duration-300 cursor-pointer px-1"
+              >
+                <img src={language.icon} alt="Language Switcher" />
+                <span className="uppercase font-bold text-xl text-main tracking-[2px]">
+                  {language.title}
+                </span>
+              </div>
+            ))}
           </div>
           <button
             onClick={showPopup}
@@ -337,7 +343,7 @@ export default function Nav() {
                 />
               </svg>
             </span>
-            Free consultation
+            {t("button")}
           </button>
 
           {/* popup  */}
@@ -345,13 +351,11 @@ export default function Nav() {
             <div className="flex flex-col items-center justify-center gap-12">
               <div className="flex flex-col text-center gap-1 text-black">
                 <h1 className="text-4xl md:text-5xl font-bold">
-                  Still Deciding?
+                  {tConsultation("title")}
                 </h1>
-                <p className="text-xl font-medium">
-                  Discuss your goals and get tailored digital solutions!
-                </p>
+                <p className="text-xl font-medium">{tConsultation("text")}</p>
               </div>
-              <ConsultationForm btnTitle="Submit" />
+              <ConsultationForm btnTitle={tConsultation("button")} />
             </div>
           </Popup>
           {/* popup end */}

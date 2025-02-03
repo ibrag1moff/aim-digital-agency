@@ -1,0 +1,282 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "services": "Services",
+    "whoweare": "Who We Are",
+    "about": "About us",
+    "contact": "Contact us",
+    "button": "Free consultation",
+    "links": [
+      {
+        "id": 1,
+        "title": "Home",
+        "href": "/"
+      },
+      {
+        "id": 2,
+        "title": "Services",
+        "href": "/services"
+      },
+      {
+        "id": 3,
+        "title": "About us",
+        "href": "/about"
+      },
+      {
+        "id": 4,
+        "title": "Contact us",
+        "href": "/contact"
+      }
+    ]
+  },
+
+  "Hero": {
+    "title": "Driving Digital Success for Forward-Thinking Brands.",
+    "button": "Learn more"
+  },
+
+  "About": {
+    "title": "AIM Rəqəmsal Agency",
+    "text": "At AIM Digital Agency, we specialize in Web Development, Design, and Social Media Marketing (SMM). Our goal is to help businesses grow and succeed online by creating websites, visuals, and strategies that connect with their audience. Whether you need a professional website, eye-catching designs, or social media campaigns that deliver results, our team is here to bring your ideas to life. Let’s work together to make your brand stand out in the digital world!",
+    "button": "Read more"
+  },
+
+  "Services": {
+    "title": "Our Services",
+    "list": [
+      {
+        "id": 1,
+        "title": "UI/UX Design",
+        "text": "A website can have different objectives. There are websites that inform, we...",
+        "icon": "/services-icon-1.svg"
+      },
+      {
+        "id": 2,
+        "title": "Web Development",
+        "text": "A website can have different objectives. There are websites that inform, we...",
+        "icon": "/services-icon-2.svg"
+      },
+      {
+        "id": 3,
+        "title": "SMM",
+        "text": "A website can have different objectives. There are websites that inform, we...",
+        "icon": "/services-icon-3.svg"
+      }
+    ]
+  },
+
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "tablist": [
+      { "id": "web_dev", "title": "Web Development" },
+      { "id": "branding", "title": "Branding" },
+      { "id": "smm", "title": "SEO" }
+    ],
+    "webDevFAQ": [
+      {
+        "id": 1,
+        "question": "What’s the process for custom web development?",
+        "answer": "Our process includes understanding your business needs, designing the website, developing the features, testing, and finally launching the website. We also ensure you’re involved every step of the way."
+      },
+      {
+        "id": 2,
+        "question": "How long does it take to develop a website?",
+        "answer": "The timeline depends on the complexity of your project. A basic website typically takes around 2-4 weeks, while more complex websites may take 6-8 weeks or more."
+      },
+      {
+        "id": 3,
+        "question": "What technologies do you use for web development?",
+        "answer": "We use modern technologies like React, Next.js, Node.js, and other frameworks to ensure that your website is fast, responsive, and scalable."
+      },
+      {
+        "id": 4,
+        "question": "Will my website be mobile-friendly?",
+        "answer": "Absolutely! We design and develop websites that are fully responsive, ensuring they look and work great on all devices, including smartphones and tablets."
+      },
+      {
+        "id": 5,
+        "question": "Can you help me with website hosting and domain registration?",
+        "answer": "Yes, we can assist with choosing the best hosting provider and help you register your domain name, ensuring your website runs smoothly."
+      },
+      {
+        "id": 6,
+        "question": "Will my website be optimized for SEO?",
+        "answer": "Yes, we optimize your website for search engines from the start, including fast loading times, clean code, and SEO-friendly content to help you rank better on Google."
+      }
+    ],
+    "brandingFAQ": [
+      {
+        "id": 1,
+        "question": "What is branding, and why is it important for my business?",
+        "answer": "Branding is the process of creating a unique identity for your business through elements like logos, colors, and messaging. It’s crucial because it helps you stand out from competitors, build customer loyalty, and establish trust with your audience."
+      },
+      {
+        "id": 2,
+        "question": "How can branding benefit my business?",
+        "answer": " Strong branding makes your business more recognizable, helps attract the right customers, builds trust, and ensures consistency across all touchpoints. It also creates emotional connections with your audience, which leads to higher customer retention."
+      }
+    ],
+    "seoFAQ": [
+      {
+        "id": 1,
+        "question": "What is SEO, and why is it important for my business?",
+        "answer": "SEO (Search Engine Optimization) is the process of optimizing your website so it ranks higher on search engine results pages (SERPs). It's important because it increases your website’s visibility, drives organic traffic, and can lead to higher conversion rates."
+      },
+      {
+        "id": 2,
+        "question": "What are keywords, and how do I choose the right ones for my website?",
+        "answer": "Keywords are the terms and phrases people type into search engines when looking for information. To choose the right ones, you should conduct keyword research to identify terms that are relevant to your business, have good search volume, and are not overly competitive."
+      },
+      {
+        "id": 3,
+        "question": "What is page speed, and how does it impact SEO?",
+        "answer": "Page speed refers to how fast your website loads. Faster-loading websites tend to rank higher because they provide a better user experience. Search engines, like Google, use page speed as a ranking factor."
+      },
+      {
+        "id": 4,
+        "question": "How do I optimize images for SEO?",
+        "answer": "To optimize images for SEO, you should compress them to reduce file size, use descriptive file names, and include alt text that accurately describes the image content. This can improve both page load times and search engine visibility."
+      },
+      {
+        "id": 5,
+        "question": "How do I know if my SEO efforts are working?",
+        "answer": "ou can track your SEO performance using tools like Google Analytics, Google Search Console, and SEO ranking tools. Key metrics to monitor include organic traffic, keyword rankings, bounce rate, and conversion rates."
+      },
+      {
+        "id": 6,
+        "question": "What is a meta tag, and why is it important for SEO?",
+        "answer": "Meta tags provide information about your webpage to search engines. The most important meta tags for SEO are the title tag and meta description, which help search engines understand the content of your page and display relevant information in the search results."
+      },
+      {
+        "id": 7,
+        "question": "What is Google Analytics, and how does it help with SEO?",
+        "answer": "Google Analytics is a free tool that tracks and reports website traffic. It helps you monitor SEO performance by showing how visitors interact with your site, what keywords bring traffic, and how well your pages are converting visitors into customers."
+      }
+    ]
+  },
+
+  "Banner": {
+    "title": "Connect with Us on Social Media"
+  },
+
+  "Consultation": {
+    "title": "Still deciding?",
+    "subtitle": "What’s included?",
+    "list": [
+      "Discussing the client’s goals and challenges.",
+      "Explaining the services we offer",
+      "Suggesting potential solutions and technologies."
+    ],
+    "text": "Discuss your goals and get tailored digital solutions!",
+    "email": "Business Email *",
+    "name": "Full Name *",
+    "company": "Company/Brand *",
+    "budget": "Budget *",
+    "phone": "Phone Number",
+    "contact": "Your Contact (WhatsApp/Telegram/VK/Phone)",
+    "textarea": "How can We help you?",
+    "button": "Get your unique proposal"
+  },
+
+  "ContactHero": {
+    "title": "Get in Touch with Us!"
+  },
+
+  "AboutHero": {
+    "title": "We are AIM Team",
+    "aboutTitle": "AIM Digital Agency",
+    "text": "AIM Digital Agency, based in Baku, Azerbaijan, is committed to helping businesses establish a strong digital presence and achieve their goals. We specialize in website development, UI/UX design, SEO, and digital marketing, providing customized solutions that enhance brand visibility and drive engagement. Our team of experienced professionals focuses on creating high-performance websites, visually compelling designs, and data-driven marketing strategies to ensure our clients stand out in a competitive market.We believe that every business deserves a unique and effective digital strategy, which is why we take a personalized approach to each project. From responsive web development and intuitive user experiences to advanced SEO optimization and targeted social media campaigns, our goal is to help businesses grow, attract more customers, and increase their online success. At AIM Digital Agency, customer satisfaction is our top priority, and we are dedicated to delivering innovative and results-oriented solutions that make a lasting impact.",
+    "promiseTitle": "Our promises to you"
+  },
+
+  "OurPromises": [
+    {
+      "id": 1,
+      "title": "Communication",
+      "text": "Clear communication between both parties enables us to work together optimally, grow and move forward. We promise to always communicate in a timely and clear manner."
+    },
+    {
+      "id": 2,
+      "title": "Transparency",
+      "text": "Good or bad news, we promise to communicate honestly at all times and to give reasons for the choices and results made."
+    },
+    {
+      "id": 3,
+      "title": "Professionalism",
+      "text": "We promise that all our advice and choices are always weighed with pure intentions, by experienced professionals with a view to external influences."
+    },
+    {
+      "id": 4,
+      "title": "Passion",
+      "text": "When you do what you love, the best in you comes to the fore. Tell us about your passion, then we promise to strengthen it with ours."
+    }
+  ],
+
+  "Footer": {
+    "quote": "“To succeed, you must have a definite aim.” – Napoleon Hill",
+    "menuTitle": "Menu",
+    "servicesTitle": "Our Services",
+    "overTitle": "Over AIM",
+    "menuLinks": [
+      {
+        "id": 1,
+        "title": "Home",
+        "href": "/"
+      },
+      {
+        "id": 2,
+        "title": "Services",
+        "href": "/services"
+      },
+      {
+        "id": 3,
+        "title": "About us",
+        "href": "/about"
+      },
+      {
+        "id": 4,
+        "title": "Contact us",
+        "href": "/contact"
+      }
+    ],
+    "servicesLinks": [
+      {
+        "id": 1,
+        "title": "Web Development",
+        "href": "/services"
+      },
+      {
+        "id": 2,
+        "title": "UI/UX Design",
+        "href": "/services"
+      },
+      {
+        "id": 3,
+        "title": "Social Media Marketing",
+        "href": "/services"
+      }
+    ],
+    "additionalLinks": [
+      {
+        "id": 1,
+        "title": "FAQ",
+        "href": "/faq"
+      },
+      {
+        "id": 2,
+        "title": "Privary Policy",
+        "href": "/privacy-policy"
+      },
+      {
+        "id": 3,
+        "title": "Terms & Conditions",
+        "href": "/terms-and-conditions"
+      },
+      {
+        "id": 4,
+        "title": "Contact",
+        "href": "/contact"
+      }
+    ]
+  }
+}

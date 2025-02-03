@@ -1,6 +1,6 @@
 "use client";
 // next
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 // framer motion
 import { motion } from "framer-motion";
@@ -9,70 +9,19 @@ import { motion } from "framer-motion";
 import { MdPermDeviceInformation } from "react-icons/md";
 import { FaInstagram, FaLinkedin, FaYoutube, FaTelegram } from "react-icons/fa";
 
+// next-intl
+import { useTranslations } from "next-intl";
+
+// types
+import { FooterLinks } from "@/types/interfaces";
+
 export default function Footer() {
-  const menuLinks = [
-    {
-      id: 1,
-      title: "Home",
-      href: "/",
-    },
-    {
-      id: 2,
-      title: "Services",
-      href: "/services",
-    },
-    {
-      id: 3,
-      title: "About us",
-      href: "/about",
-    },
-    {
-      id: 4,
-      title: "Contact us",
-      href: "/contact",
-    },
-  ];
+  const t = useTranslations("Footer");
 
-  const services = [
-    {
-      id: 1,
-      title: "Web Development",
-      href: "/services",
-    },
-    {
-      id: 2,
-      title: "UI/UX Design",
-      href: "/services",
-    },
-    {
-      id: 3,
-      title: "Social Media Marketing",
-      href: "/services",
-    },
-  ];
+  const menuLinks = t.raw("menuLinks");
+  const servicesLinks = t.raw("servicesLinks");
+  const additionalLinks = t.raw("additionalLinks");
 
-  const additional = [
-    {
-      id: 1,
-      title: "FAQ",
-      href: "/faq",
-    },
-    {
-      id: 2,
-      title: "Privary Policy",
-      href: "/privacy-policy",
-    },
-    {
-      id: 3,
-      title: "Terms & Conditions",
-      href: "/terms-and-conditions",
-    },
-    {
-      id: 4,
-      title: "Contact",
-      href: "/contact",
-    },
-  ];
   return (
     <footer className="bg-footer bg-center bg-cover text-white">
       <div className="flex flex-col gap-12 max-w-[1240px] mx-auto py-24">
@@ -167,7 +116,7 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-12 sm:gap-0 sm:items-start sm:flex-row sm:flex-wrap sm:justify-between px-4">
           <div className="flex flex-col gap-8">
             <h1 className="font-semibold text-center max-w-[280px]">
-              “To succeed, you must have a definite aim.” – Napoleon Hill
+              {t("quote")}
             </h1>
             <div className="flex items-center justify-center gap-4">
               <motion.button
@@ -205,9 +154,9 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex flex-col text-center sm:text-left gap-8">
-            <h1 className="font-extrabold text-3xl">Menu</h1>
+            <h1 className="font-extrabold text-3xl">{t("menuTitle")}</h1>
             <div className="flex flex-col gap-2">
-              {menuLinks.map((link) => (
+              {menuLinks.map((link: FooterLinks) => (
                 <Link
                   className="font-semibold xl:hover:translate-x-2 transition-all duration-300"
                   href={link.href}
@@ -219,9 +168,9 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex flex-col text-center sm:text-left gap-8">
-            <h1 className="font-extrabold text-3xl">Our Services</h1>
+            <h1 className="font-extrabold text-3xl">{t("servicesTitle")}</h1>
             <div className="flex flex-col gap-2">
-              {services.map((link) => (
+              {servicesLinks.map((link: FooterLinks) => (
                 <Link
                   className="font-semibold xl:hover:translate-x-2 transition-all duration-300"
                   href={link.href}
@@ -233,9 +182,9 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex flex-col text-center sm:text-left gap-8">
-            <h1 className="font-extrabold text-3xl">Over AIM</h1>
+            <h1 className="font-extrabold text-3xl">{t("overTitle")}</h1>
             <div className="flex flex-col gap-2">
-              {additional.map((link) => (
+              {additionalLinks.map((link: FooterLinks) => (
                 <Link
                   className="font-semibold xl:hover:translate-x-2 transition-all duration-300"
                   href={link.href}

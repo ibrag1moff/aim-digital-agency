@@ -10,13 +10,15 @@ import { MdEmail } from "react-icons/md";
 // framer motion
 import { motion } from "framer-motion";
 
+// next-intl
+import { useTranslations } from "next-intl";
+
 export default function Contact() {
+  const t = useTranslations("ContactHero");
+  const tform = useTranslations("Consultation");
   return (
     <div>
-      <SectionPage
-        title="Get in Touch with Us!"
-        text="Contact us today to discuss your project or get answers to your questions—we’re here to help!"
-      />
+      <SectionPage title={t("title")} />
       <div className="py-[150px] px-4 max-w-[1240px] mx-auto">
         <motion.div
           initial={{ opacity: 0 }}
@@ -24,7 +26,7 @@ export default function Contact() {
           transition={{ duration: 0.3 }}
           className="flex flex-col lg:flex-row-reverse items-center justify-evenly"
         >
-          <ContactForm />
+          <ContactForm t={tform} />
           <motion.div
             initial={{ x: -100 }}
             animate={{ x: 0 }}

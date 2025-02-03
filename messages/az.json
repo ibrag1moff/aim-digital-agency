@@ -1,0 +1,282 @@
+{
+  "Navbar": {
+    "home": "Əsas səhifə",
+    "services": "Xidmətlər",
+    "whoweare": "Haqqımızda",
+    "about": "Bizim haqqımızda",
+    "contact": "Əlaqə",
+    "button": "Pulsuz konsultasiya",
+    "links": [
+      {
+        "id": 1,
+        "title": "Əsas səhifə",
+        "href": "/"
+      },
+      {
+        "id": 2,
+        "title": "Xidmətlər",
+        "href": "/services"
+      },
+      {
+        "id": 3,
+        "title": "Haqqımızda",
+        "href": "/about"
+      },
+      {
+        "id": 4,
+        "title": "Əlaqə",
+        "href": "/contact"
+      }
+    ]
+  },
+
+  "Hero": {
+    "title": "İrəlidüşünən brendlər üçün rəqəmsal uğuru təmin edirik.",
+    "button": "Daha ətraflı"
+  },
+
+  "About": {
+    "title": "AIM Digital Agentliyi",
+    "text": "AIM Digital Agentliyində biz Veb İnkişafı, Dizayn və Sosial Media Marketinqi (SMM) sahələrində ixtisaslaşmışıq. Məqsədimiz, bizneslərin onlayn şəkildə böyüməsinə və uğur qazanmasına kömək etməkdir, bu isə auditoriyaları ilə əlaqə quracaq veb saytlar, vizuallar və strategiyalar yaratmaqla mümkündür. İstər peşəkar bir veb sayt, göz oxşayan dizaynlar, istərsə də nəticə verən sosial media kampaniyalarına ehtiyacınız olsun, komandamız ideyalarınızı gerçəkləşdirmək üçün buradadır. Gəlin, brendinizi rəqəmsal dünyada fərqləndirmək üçün birgə çalışaq!",
+    "button": "Daha ətraflı"
+  },
+
+  "Services": {
+    "title": "Xidmətlərimiz",
+    "list": [
+      {
+        "id": 1,
+        "title": "UI/UX Dizayn",
+        "text": "Veb saytların müxtəlif məqsədləri ola bilər. Bəzi saytlar məlumatlandırır, biz...",
+        "icon": "/services-icon-1.svg"
+      },
+      {
+        "id": 2,
+        "title": "Veb İnkişaf",
+        "text": "Veb saytların müxtəlif məqsədləri ola bilər. Bəzi saytlar məlumatlandırır, biz...",
+        "icon": "/services-icon-2.svg"
+      },
+      {
+        "id": 3,
+        "title": "SMM",
+        "text": "Veb saytların müxtəlif məqsədləri ola bilər. Bəzi saytlar məlumatlandırır, biz...",
+        "icon": "/services-icon-3.svg"
+      }
+    ]
+  },
+
+  "FAQ": {
+    "title": "Tez-tez Verilən Suallar",
+    "tablist": [
+      { "id": "web_dev", "title": "Veb İnkişafı" },
+      { "id": "branding", "title": "Brendinq" },
+      { "id": "smm", "title": "SEO" }
+    ],
+    "webDevFAQ": [
+      {
+        "id": 1,
+        "question": "Xüsusi veb inkişafının prosesi necədir?",
+        "answer": "Bizim prosesimiz iş ehtiyaclarınızı anlamaq, veb saytın dizaynını hazırlamaq, xüsusiyyətləri inkişaf etdirmək, testi həyata keçirmək və nəhayət veb saytı işə salmaqdan ibarətdir. Həmçinin, hər addımda sizinlə əməkdaşlıq edirik."
+      },
+      {
+        "id": 2,
+        "question": "Veb saytın hazırlanması nə qədər vaxt aparır?",
+        "answer": "Zaman cədvəli layihənizin mürəkkəbliyindən asılıdır. Sadə veb saytlar adətən 2-4 həftə ərzində tamamlanır, daha mürəkkəb veb saytlar isə 6-8 həftə və ya daha çox vaxt apara bilər."
+      },
+      {
+        "id": 3,
+        "question": "Veb inkişafı üçün hansı texnologiyalardan istifadə edirsiniz?",
+        "answer": "Biz müasir texnologiyalar, məsələn, React, Next.js, Node.js və digər çərçivələrdən istifadə edirik ki, veb saytınız sürətli, cavab verən və genişlənə bilən olsun."
+      },
+      {
+        "id": 4,
+        "question": "Veb saytım mobil cihazlarla uyğun olacaqmı?",
+        "answer": "Əlbəttə! Biz veb saytları tam cavab verən şəkildə dizayn edirik və inkişaf etdiririk, beləliklə, onlar bütün cihazlarda, o cümlədən smartfonlar və planşetlərdə mükəmməl işləyəcək."
+      },
+      {
+        "id": 5,
+        "question": "Veb saytımın hostingi və domen qeydiyyatı ilə bağlı kömək edə bilərsinizmi?",
+        "answer": "Bəli, biz ən yaxşı hosting provayderini seçməyə və domen adınızı qeydiyyatdan keçirməyə kömək edə bilərik, beləliklə, veb saytınız problemsiz işləyəcək."
+      },
+      {
+        "id": 6,
+        "question": "Veb saytım SEO üçün optimallaşdırılacaqmı?",
+        "answer": "Bəli, biz veb saytınızı axtarış mühərrikləri üçün optimallaşdırırıq, o cümlədən sürətli yükləmə vaxtları, təmiz kod və SEO dostu məzmun, beləliklə Google-da daha yaxşı sıralanmağa kömək edirik."
+      }
+    ],
+    "brandingFAQ": [
+      {
+        "id": 1,
+        "question": "Brendinq nədir və biznesim üçün niyə vacibdir?",
+        "answer": "Brendinq biznesiniz üçün unikal bir kimlik yaratmaq prosesidir və loqolar, rənglər və mesajlaşma kimi elementləri əhatə edir. Bu, rəqiblərdən fərqlənməyinizə, müştəri sadiqliyi qurmağa və auditoriyanızla etibar yaratmağa kömək edir."
+      },
+      {
+        "id": 2,
+        "question": "Brendinq biznesimə necə fayda gətirə bilər?",
+        "answer": "Güclü brendinq biznesinizin daha tanınan olmasına, doğru müştəriləri cəlb etməyə, etibar qurmağa və bütün təmas nöqtələrində ardıcıllığı təmin etməyə kömək edir. Həmçinin auditoriyanızla emosional əlaqələr yaradır, bu da yüksək müştəri saxlama nisbətlərinə gətirib çıxarır."
+      }
+    ],
+    "seoFAQ": [
+      {
+        "id": 1,
+        "question": "SEO nədir və biznesim üçün niyə vacibdir?",
+        "answer": "SEO (Axtarış Mühərriki Optimizasiyası) veb saytınızı axtarış mühərriki nəticə səhifələrində (SERP-lərdə) daha yüksək sıralanması üçün optimallaşdırma prosesidir. Bu, veb saytınızın görünürlüğünü artırır, orqanik trafik gətirir və yüksək dönüşüm nisbətlərinə səbəb ola bilər."
+      },
+      {
+        "id": 2,
+        "question": "Açar sözlər nədir və veb saytım üçün doğru olanları necə seçirəm?",
+        "answer": "Açar sözlər istifadəçilərin axtarış mühərriklərində məlumat tapmaq üçün yazdıqları ifadə və sözlərdir. Doğru olanları seçmək üçün açar söz araşdırması aparmalısınız ki, biznesinizə uyğun, yaxşı axtarış həcminə malik və çox rəqabətli olmayan terminləri müəyyən edin."
+      },
+      {
+        "id": 3,
+        "question": "Səhifə sürəti nədir və SEO-ya necə təsir edir?",
+        "answer": "Səhifə sürəti veb saytınızın yüklənmə sürətini ifadə edir. Daha sürətli yüklənən veb saytlar ümumiyyətlə daha yüksək sıralanır, çünki daha yaxşı istifadəçi təcrübəsi təqdim edirlər. Axtarış mühərrikləri, məsələn, Google, səhifə sürətini sıralama faktoru olaraq istifadə edir."
+      },
+      {
+        "id": 4,
+        "question": "Şəkilləri SEO üçün necə optimallaşdırmalıyam?",
+        "answer": "Şəkilləri SEO üçün optimallaşdırmaq üçün onları fayl ölçüsünü azaltmaq məqsədilə sıxmalısınız, təsviri fayl adları istifadə etməlisiniz və şəkil məzmununu düzgün təsvir edən alt yazılar əlavə etməlisiniz. Bu həm səhifə yükləmə vaxtlarını, həm də axtarış mühərriki görünürlüğünü yaxşılaşdırmağa kömək edə bilər."
+      },
+      {
+        "id": 5,
+        "question": "SEO səylərimin işləyib-işləmədiyini necə bilə bilərəm?",
+        "answer": "SEO performansınızı izləmək üçün Google Analytics, Google Search Console və SEO sıralama alətləri kimi alətlərdən istifadə edə bilərsiniz. İzləmək üçün əsas göstəricilər orqanik trafik, açar söz sıralamaları, sıçrayış nisbəti və dönüşüm nisbətləridir."
+      },
+      {
+        "id": 6,
+        "question": "Meta tag nədir və SEO üçün niyə vacibdir?",
+        "answer": "Meta taglər veb səhifəniz haqqında axtarış mühərriklərinə məlumat verir. SEO üçün ən vacib meta taglər başlıq tagi və meta təsviridir, hansı ki axtarış mühərriklərinin səhifənizin məzmununu başa düşməsinə və müvafiq məlumatları nəticələrdə göstərməsinə kömək edir."
+      },
+      {
+        "id": 7,
+        "question": "Google Analytics nədir və SEO üçün necə kömək edir?",
+        "answer": "Google Analytics pulsuz bir alətdir və veb sayt trafikini izləyir və hesabat verir. Bu, SEO performansınızı izləməyə kömək edir, istifadəçilərin saytınızla necə qarşılıqlı əlaqədə olduğunu, hansı açar sözlərin trafik gətirdiyini və səhifələrinizin necə yaxşı nəticələr verdiyini göstərir."
+      }
+    ]
+  },
+
+  "Banner": {
+    "title": "Bizi Sosial Şəbəkələrdə İzlə"
+  },
+
+  "Consultation": {
+    "title": "Hələ qərar vermirsiniz?",
+    "subtitle": "Nə daxildir?",
+    "text": "Hədəflərinizi müzakirə edin və özəl rəqəmsal həllər alın!",
+    "list": [
+      "Müştərinin məqsəd və çətinliklərini müzakirə etmək.",
+      "Təklif etdiyimiz xidmətləri izah etmək.",
+      "Potensial həllər və texnologiyalar təklif etmək."
+    ],
+    "email": "Biznes E-poçtu *",
+    "name": "Tam Ad *",
+    "company": "Şirkət/Brend *",
+    "phone": "Telefon nömrəsi",
+    "budget": "Büdcə *",
+    "contact": "Əlaqə məlumatınız (WhatsApp/Telegram/VK/Telfon)",
+    "textarea": "Sizə necə kömək edə bilərik?",
+    "button": "Özəl təklifinizi alın"
+  },
+
+  "ContactHero": {
+    "title": "Bizimlə əlaqə saxlayın!"
+  },
+
+  "AboutHero": {
+    "title": "Biz AIM Komandasıyıq",
+    "aboutTitle": "AIM Rəqəmsal Agentliyi",
+    "text": "AIM Digital Agency, Bakı, Azərbaycan mərkəzli, bizneslərin güclü rəqəmsal mövcudluq qurmasına və məqsədlərinə çatmasına kömək etməyə həsr olunmuşdur. Biz veb saytların hazırlanması, UI/UX dizaynı, SEO və rəqəmsal marketinq sahələrində ixtisaslaşmışıq və markaların görünürlüğünü artırmağa və müştəri əlaqələrini gücləndirməyə kömək edən fərdiləşdirilmiş həllər təqdim edirik. Təcrübəli peşəkarlar komandamız yüksək performanslı veb saytlar, vizual baxımdan cəlbedici dizaynlar və məlumat əsaslı marketinq strategiyaları hazırlayaraq müştərilərimizin rəqabətli bazarda fərqlənməsinə təminat verir.Biz hər bir biznesin unikal və effektiv rəqəmsal strategiyaya ehtiyacı olduğuna inanırıq və buna görə hər bir layihəyə fərdi yanaşma tətbiq edirik. Reaksiya verən veb inkişafından, istifadəçi təcrübəsinin intuitiv dizaynına, inkişaf etmiş SEO optimizasiyasından, hədəfli sosial media kampaniyalarına qədər, məqsədimiz bizneslərin böyüməsinə, daha çox müştəri cəlb etməsinə və onlayn uğurlarını artırmasına kömək etməkdir. AIM Digital Agency-də müştəri məmnuniyyəti bizim ən yüksək prioritetimizdir və biz davamlı təsir yaradan innovativ və nəticəyə yönəlmiş həllər təqdim etməyə həsr olunmuşuq.",
+    "promiseTitle": "Bizim sizə olan vədlərimiz"
+  },
+
+  "OurPromises": [
+    {
+      "id": 1,
+      "title": "Əlaqə",
+      "text": "Hər iki tərəf arasında aydın əlaqə, birgə işləmək, böyümək və irəliləmək üçün bizə imkan yaradır. Həmişə vaxtında və aydın şəkildə əlaqə saxlayacağımıza söz veririk."
+    },
+    {
+      "id": 2,
+      "title": "Şəffaflıq",
+      "text": "Yaxşı və ya pis xəbərlər olsun, biz həmişə dürüst şəkildə əlaqə saxlayacağımıza və verilən seçimlər və nəticələr üçün səbəbləri izah edəcəyimizə söz veririk."
+    },
+    {
+      "id": 3,
+      "title": "Peşəkarlıq",
+      "text": "Bütün məsləhət və seçimlərimizin hər zaman təcrübəli peşəkarlardan gələn saf niyyətlərlə və xarici təsirləri nəzərə alaraq veriləcəyinə söz veririk."
+    },
+    {
+      "id": 4,
+      "title": "Həvəs",
+      "text": "Sevdiyinizi edərkən ən yaxşı tərəfiniz ortaya çıxır. Bizə həvəsinizi danışın, biz də öz həvəsimizlə bunu gücləndirəcəyimizə söz veririk."
+    }
+  ],
+
+  "Footer": {
+    "quote": "“Uğur qazanmaq üçün müəyyən bir məqsədiniz olmalıdır.” – Napoleon Hill",
+    "menuTitle": "Menyu",
+    "servicesTitle": "Xidmətlərimiz",
+    "overTitle": "AIM Haqqında",
+    "menuLinks": [
+      {
+        "id": 1,
+        "title": "Əsas Səhifə",
+        "href": "/"
+      },
+      {
+        "id": 2,
+        "title": "Xidmətlər",
+        "href": "/services"
+      },
+      {
+        "id": 3,
+        "title": "Haqqımızda",
+        "href": "/about"
+      },
+      {
+        "id": 4,
+        "title": "Əlaqə",
+        "href": "/contact"
+      }
+    ],
+    "servicesLinks": [
+      {
+        "id": 1,
+        "title": "Veb İnkişafı",
+        "href": "/services"
+      },
+      {
+        "id": 2,
+        "title": "UI/UX Dizaynı",
+        "href": "/services"
+      },
+      {
+        "id": 3,
+        "title": "Sosial Media Marketinqi",
+        "href": "/services"
+      }
+    ],
+    "additionalLinks": [
+      {
+        "id": 1,
+        "title": "Tez-tez Verilən Suallar",
+        "href": "/faq"
+      },
+      {
+        "id": 2,
+        "title": "Gizlilik Siyasəti",
+        "href": "/privacy-policy"
+      },
+      {
+        "id": 3,
+        "title": "Şərtlər",
+        "href": "/terms-and-conditions"
+      },
+      {
+        "id": 4,
+        "title": "Əlaqə",
+        "href": "/contact"
+      }
+    ]
+  }
+}

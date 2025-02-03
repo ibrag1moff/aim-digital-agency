@@ -7,11 +7,11 @@ import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
 interface FAQCard {
   id: number;
-  title: string;
-  content: string;
+  question: string;
+  answer: string;
 }
 
-export default function FAQCard({ id, title, content }: FAQCard) {
+export default function FAQCard({ id, question, answer }: FAQCard) {
   const [selected, setSelected] = useState<number | null>(null);
 
   const toggle = (id: number) => {
@@ -34,7 +34,7 @@ export default function FAQCard({ id, title, content }: FAQCard) {
             selected == id ? "text-white" : "text-white"
           }`}
         >
-          {title}
+          {question}
         </h1>
 
         {/* logic of faq icon */}
@@ -51,15 +51,15 @@ export default function FAQCard({ id, title, content }: FAQCard) {
         </span>
       </div>
 
-      {/* content of faq */}
+      {/* answer of faq */}
       <div
         className={
           selected === id
-            ? "text-black font-medium text-lg bg-[#f5f5f5] min-h-[200px] rounded-lg leading-[22px] text-left mt-[-10px] p-8"
+            ? "text-black font-medium text-xl bg-[#f5f5f5] min-h-[150px] rounded-lg leading-[22px] text-left mt-[-10px] p-8"
             : "hidden"
         }
       >
-        {content}
+        {answer}
       </div>
     </div>
   );
