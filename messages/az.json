@@ -62,7 +62,100 @@
         "text": "Veb saytların müxtəlif məqsədləri ola bilər. Bəzi saytlar məlumatlandırır, biz...",
         "icon": "/services-icon-3.svg"
       }
-    ]
+    ],
+    "WebDevelopment": {
+      "title": "Veb İnkişaf",
+      "text": "Biz bizneslər üçün sürətli, keyfiyyətli və etibarlı veb saytlar hazırlayırıq, onlara onlayn mövcudluqlarını gücləndirməyə kömək edirik. Veb inkişaf prosesimiz müasir, miqyaslana bilən və təhlükəsiz həllər təqdim etməyə yönəlib, tamamilə sizin tələblərinizə uyğun işləyirik.",
+      "bg": "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/webdev-section.jpg')",
+      "detailsImage": "/webdev-details-image.jpg",
+      "secondTitle": "İnkişaf mərhələləri",
+      "list": [
+        {
+          "id": 1,
+          "title": "Planlaşdırma",
+          "text": "Planlaşdırma mərhələsi biznes məqsədlərinizi, hədəf auditoriyanızı və texniki tələblərinizi anlamağı əhatə edir. Layihənin əhatəsini, büdcəsini və vaxt cədvəlini müəyyən edərək inkişaf prosesində hamar bir iş axını təmin edirik."
+        },
+        {
+          "id": 2,
+          "title": "Dizayn",
+          "text": "Dizayn mərhələsində biz intuitiv və vizual cəhətdən cazibədar istifadəçi interfeysi yaratmağa diqqət yetiririk. Wireframe, maket və prototiplər hazırlanır, istifadəçi təcrübəsi və marka kimliyini dizayn prosesinin mərkəzinə qoyuruq."
+        },
+        {
+          "id": 3,
+          "title": "Frontend İnkişafı",
+          "text": "Frontend inkişafı mərhələsi dizaynı interaktiv və funksional bir interfeysə çevirir. Veb saytın cavabdeh, performans üçün optimallaşdırılmış və bütün cihazlar və brauzerlər üçün əlçatan olduğuna əmin oluruq."
+        },
+        {
+          "id": 4,
+          "title": "Backend İnkişafı",
+          "text": "Backend inkişafı zamanı, frontend-i dəstəkləyən server tərəfli infrastrukturu yaratmağa diqqət yetiririk. Bu, verilənlər bazalarının, API-lərin hazırlanması və veb saytın verilənləri və sorğuları problemsiz şəkildə idarə etməsini təmin etməyi əhatə edir."
+        },
+        {
+          "id": 5,
+          "title": "Test Etmə",
+          "text": "Test etmə, veb saytın hər bir hissəsinin düzgün işlədiyinə əmin olmaq üçün həyata keçirilir. Sıx keyfiyyət təminatı aparırıq, hər hansı bir səhvi tapır və düzəldirik, uyğunluq təmin edirik və sürət və təhlükəsizlik üçün testlər keçiririk."
+        },
+        {
+          "id": 6,
+          "title": "Yayımlama",
+          "text": "Hər şey test edildikdən və təsdiqləndikdən sonra, veb saytı canlı mühitə yayımlayırıq. Bu mərhələ hosting qurulması, domenlərin yaradılması və hər şeyin ictimaiyyətə açıq şəkildə optimallaşdırılmasını əhatə edir."
+        },
+        {
+          "id": 7,
+          "title": "Dəstək",
+          "text": "Veb sayt canlıya çıxdıqdan sonra davamlı dəstək təmin edirik, performansı izləyirik, hər hansı bir problemi həll edirik və saytın təhlükəsiz, funksional və ən son xüsusiyyətlərlə güncellenməsini təmin edirik."
+        }
+      ],
+      "type": [
+        {
+          "id": "uiux-design",
+          "title": "UI/UX Dizayn",
+          "text": "UI/UX dizayn, bir məhsulun istifadəçi interfeysinin (UI) və istifadəçi təcrübəsinin (UX) dizayn edilməsi prosesidir. Məqsəd, vizual cəlbedici, istifadəçi dostu və funksional bir təcrübə yaratmaqdır.",
+          "bg": "/uiuxdesign.png",
+          "button": "sifariş elə"
+        },
+        {
+          "id": "ecommerce",
+          "title": "E-ticarət Saytı",
+          "text": "E-ticarət saytları, bizneslərin məhsul və ya xidmətləri onlayn şəkildə istehlakçılara satmasını təmin edir. Adətən məhsul kataloqları, ödəniş sistemləri və alış-veriş səbəti kimi xüsusiyyətlərə malik olur.",
+          "bg": "/ecommerce.avif",
+          "button": "sifariş elə"
+        },
+        {
+          "id": "landing-page",
+          "title": "Landing Səhifə",
+          "text": "Landing səhifə müəyyən bir marketinq məqsədi üçün yaradılmış tək səhifəlik vebsaytdır. Rəqəmsal kampaniyalarda istifadə edilərək müştəri məlumatlarını toplamaq, məhsul və ya xidmətləri tanıtmaq və müəyyən bir fəaliyyətə təşviq etmək üçün istifadə olunur.",
+          "bg": "/landingpage.jpg",
+          "button": "sifariş elə"
+        },
+        {
+          "id": "personal-portfolio",
+          "title": "Portfolio Saytı",
+          "text": "Portfolio saytı dizaynerlər, fotoqraflar, yazıçılar və proqramçılar kimi peşəkarların işlərini və bacarıqlarını nümayiş etdirmək üçün istifadə olunur. Bu, potensial işəgötürənlər və ya müştərilər üçün keçmiş layihələrin nümunələrini təqdim edən rəqəmsal CV rolunu oynayır.",
+          "bg": "/portfolio.webp",
+          "button": "sifariş elə"
+        },
+        {
+          "id": "nonprofit",
+          "title": "Qeyri-kommersiya Saytı",
+          "text": "Qeyri-kommersiya saytları, təşkilatların missiyasını və fəaliyyətlərini tanıtmaq üçün yaradılır. Adətən təşkilatın məqsədləri, ianə toplama təşəbbüsləri və ziyarətçilərin necə kömək edə biləcəyinə dair məlumatları əhatə edir.",
+          "bg": "/nonprofit.png",
+          "button": "sifariş elə"
+        }
+      ]
+    },
+
+    "Branding": {
+      "title": "Brendinq",
+      "text": "fdfdokfodjfiodjfiodjfoidjfij",
+      "bg": "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/branding-image.jpg')"
+    },
+
+    "SEO": {
+      "title": "Axtarış Mühərriki Optimizasiyası",
+      "text": "fdfdokfodjfiodjfiodjfoidjfij",
+      "bg": "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/seo-image.jpg')"
+    }
   },
 
   "FAQ": {

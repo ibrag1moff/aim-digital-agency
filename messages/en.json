@@ -62,7 +62,100 @@
         "text": "A website can have different objectives. There are websites that inform, we...",
         "icon": "/services-icon-3.svg"
       }
-    ]
+    ],
+    "WebDevelopment": {
+      "title": "Web Development",
+      "text": "We specialize in crafting high-quality, performance-driven websites that help businesses establish a strong online presence. Our web development process is designed to deliver modern, scalable, and secure solutions tailored to your needs.",
+      "bg": "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/webdev-section.jpg')",
+      "detailsImage": "/webdev-details-image.jpg",
+      "secondTitle": "Stages of Development",
+      "list": [
+        {
+          "id": 1,
+          "title": "Planning",
+          "text": "The planning stage involves understanding your business goals, target audience, and technical requirements. We lay the groundwork by establishing the project scope, budget, and timeline to ensure a smooth workflow throughout the development process."
+        },
+        {
+          "id": 2,
+          "title": "Design",
+          "text": " In the design phase, we focus on creating an intuitive and visually appealing user interface. Wireframes, mockups, and prototypes are developed, keeping user experience and brand identity at the core of the design process."
+        },
+        {
+          "id": 3,
+          "title": "Frontend Development",
+          "text": "The frontend development phase turns the design into an interactive, functional interface. We ensure that the website is responsive, optimized for performance, and accessible across all devices and browsers."
+        },
+        {
+          "id": 4,
+          "title": "Backend Development",
+          "text": "During backend development, we focus on creating the server-side infrastructure that supports the frontend. This includes developing databases, APIs, and ensuring the website can handle data and requests seamlessly."
+        },
+        {
+          "id": 5,
+          "title": "Testing",
+          "text": "Testing ensures that every aspect of the website functions correctly. We conduct rigorous quality assurance, identifying and fixing any bugs, ensuring compatibility, and testing for speed and security."
+        },
+        {
+          "id": 6,
+          "title": "Deployment",
+          "text": "Once everything is tested and approved, we deploy the website to a live environment. This step involves configuring hosting, setting up domains, and ensuring everything is properly optimized for public access."
+        },
+        {
+          "id": 7,
+          "title": "Support",
+          "text": "After the website goes live, we provide continuous support, monitoring for performance, resolving any issues, and making updates as necessary to keep the site secure, functional, and up-to-date with the latest features."
+        }
+      ],
+      "type": [
+        {
+          "id": "uiux-design",
+          "title": "UI/UX Design",
+          "text": "UI/UX design is the process of designing a product’s user interface (UI) and user experience (UX) to ensure it is visually appealing, user-friendly, and functional.",
+          "bg": "/uiuxdesign.png",
+          "button": "order website"
+        },
+        {
+          "id": "ecommerce",
+          "title": "E-commerce Website",
+          "text": " E-commerce websites allow businesses to sell products or services directly to consumers online. They typically feature product catalogs, payment gateways, and shopping carts to facilitate transactions.",
+          "bg": "/ecommerce.avif",
+          "button": "order website"
+        },
+        {
+          "id": "landing-page",
+          "title": "Landing Page",
+          "text": " A landing page is a single web page designed for a specific marketing purpose. It's commonly used in digital campaigns to capture leads, promote a product or service, or encourage a specific action like signing up or making a purchase.",
+          "bg": "/landingpage.jpg",
+          "button": "order website"
+        },
+        {
+          "id": "personal-portfolio",
+          "title": "Portfolio Website",
+          "text": "A portfolio website is used by professionals such as designers, photographers, writers, and developers to showcase their work and skills. It serves as a digital resume, providing potential employers or clients with examples of past projects.",
+          "bg": "/portfolio.webp",
+          "button": "order website"
+        },
+        {
+          "id": "nonprofit",
+          "title": "Nonprofit Website",
+          "text": " Nonprofit websites are created to promote the mission and work of nonprofit organizations. They typically feature information on the organization's goals, fundraising efforts, and ways for visitors to get involved or donate.",
+          "bg": "/nonprofit.png",
+          "button": "order website"
+        }
+      ]
+    },
+
+    "Branding": {
+      "title": "Branding",
+      "text": "fdfdokfodjfiodjfiodjfoidjfij",
+      "bg": "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/branding-image.jpg')"
+    },
+
+    "SEO": {
+      "title": "Search Engine Optimization",
+      "text": "fdfdokfodjfiodjfiodjfoidjfij",
+      "bg": "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/seo-image.jpg')"
+    }
   },
 
   "FAQ": {
