@@ -133,7 +133,7 @@ export default function Hero() {
           </defs>
         </svg>
       </div>
-      <div className="absolute bottom-20 left-[10%] opacity-50">
+      <div className="hidden xl:block absolute bottom-20 left-[10%] opacity-50">
         <svg
           width="60"
           height="60"

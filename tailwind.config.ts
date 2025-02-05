@@ -18,6 +18,8 @@ export default {
         services: "url(/services-bg.jpg)",
         footer: 'url("/footer-bg.jpg")',
         socials: 'url("/socials-banner.jpg")',
+        webdev:
+          'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/webdev-section.jpg")',
       },
       boxShadow: {
         custom: "0 0 10px rgba(0, 0, 0, 0.4)",

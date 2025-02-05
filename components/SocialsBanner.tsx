@@ -8,7 +8,7 @@ export default async function SocialsBanner() {
   const t = await getTranslations("Banner");
   return (
     <div className="bg-socials bg-center bg-cover shadow-custom">
-      <div className="flex flex-col items-center justify-center gap-12 py-16">
+      <div className="flex flex-col items-center justify-center gap-12 py-16 px-4">
         <h1 className="font-medium text-4xl sm:text-5xl text-center tracking-[2px]">
           {t("title")}
         </h1>
