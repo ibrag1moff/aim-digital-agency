@@ -1,4 +1,8 @@
 "use client";
+// next
+import { usePathname } from "next/navigation";
+import { useParams } from "next/navigation";
+
 // components
 import SectionTitle from "./SectionTitle";
 import FAQCard from "./FAQCard";
@@ -20,16 +24,21 @@ export default function FAQ() {
   const brandingFAQ = t.raw("brandingFAQ");
   const seoFAQ = t.raw("seoFAQ");
 
+  const pathname = usePathname();
+  const params = useParams();
+
+  const { locale } = params;
+
   return (
     <div className="bg-secondary">
       <div className="text-white  py-16 lg:py-32 px-2 max-w-[1240px] mx-auto relative">
-        <SectionTitle title={t("title")} />
+        {pathname != `/${locale}/faq` && <SectionTitle title={t("title")} />}
         <Tabs>
           <TabList className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-4 py-20">
             {tablist.map((list: FAQTablist) => (
               <Tab
                 key={list.id}
-                className="cursor-pointer border border-white rounded-lg py-4 px-8 text-white font-semibold transition-all duration-300"
+                className="cursor-pointer border border-white rounded-lg py-4 px-8 w-full text-center sm:w-max sm:text-left text-white font-semibold transition-all duration-300"
                 selectedClassName="bg-main text-white outline-none border-main"
               >
                 {list.title}

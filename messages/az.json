@@ -45,20 +45,20 @@
     "title": "Xidmətlərimiz",
     "list": [
       {
-        "id": 1,
-        "title": "UI/UX Dizayn",
+        "id": "branding",
+        "title": "Brendinq",
         "text": "Veb saytların müxtəlif məqsədləri ola bilər. Bəzi saytlar məlumatlandırır, biz...",
         "icon": "/services-icon-1.svg"
       },
       {
-        "id": 2,
+        "id": "web_devopment",
         "title": "Veb İnkişaf",
         "text": "Veb saytların müxtəlif məqsədləri ola bilər. Bəzi saytlar məlumatlandırır, biz...",
         "icon": "/services-icon-2.svg"
       },
       {
-        "id": 3,
-        "title": "SMM",
+        "id": "search_engine_optimization",
+        "title": "SEO",
         "text": "Veb saytların müxtəlif məqsədləri ola bilər. Bəzi saytlar məlumatlandırır, biz...",
         "icon": "/services-icon-3.svg"
       }
@@ -185,32 +185,38 @@
   "AboutHero": {
     "title": "Biz AIM Komandasıyıq",
     "aboutTitle": "AIM Rəqəmsal Agentliyi",
-    "text": "AIM Digital Agency, Bakı, Azərbaycan mərkəzli, bizneslərin güclü rəqəmsal mövcudluq qurmasına və məqsədlərinə çatmasına kömək etməyə həsr olunmuşdur. Biz veb saytların hazırlanması, UI/UX dizaynı, SEO və rəqəmsal marketinq sahələrində ixtisaslaşmışıq və markaların görünürlüğünü artırmağa və müştəri əlaqələrini gücləndirməyə kömək edən fərdiləşdirilmiş həllər təqdim edirik. Təcrübəli peşəkarlar komandamız yüksək performanslı veb saytlar, vizual baxımdan cəlbedici dizaynlar və məlumat əsaslı marketinq strategiyaları hazırlayaraq müştərilərimizin rəqabətli bazarda fərqlənməsinə təminat verir.Biz hər bir biznesin unikal və effektiv rəqəmsal strategiyaya ehtiyacı olduğuna inanırıq və buna görə hər bir layihəyə fərdi yanaşma tətbiq edirik. Reaksiya verən veb inkişafından, istifadəçi təcrübəsinin intuitiv dizaynına, inkişaf etmiş SEO optimizasiyasından, hədəfli sosial media kampaniyalarına qədər, məqsədimiz bizneslərin böyüməsinə, daha çox müştəri cəlb etməsinə və onlayn uğurlarını artırmasına kömək etməkdir. AIM Digital Agency-də müştəri məmnuniyyəti bizim ən yüksək prioritetimizdir və biz davamlı təsir yaradan innovativ və nəticəyə yönəlmiş həllər təqdim etməyə həsr olunmuşuq.",
-    "promiseTitle": "Bizim sizə olan vədlərimiz"
+    "text": "AIM Digital Agency, Bakı, Azərbaycan mərkəzli, bizneslərin güclü rəqəmsal mövcudluq qurmasına və məqsədlərinə çatmasına kömək etməyə həsr olunmuşdur. Biz veb saytların hazırlanması, UI/UX dizaynı, SEO və rəqəmsal marketinq sahələrində ixtisaslaşmışıq və markaların görünürlüğünü artırmağa və müştəri əlaqələrini gücləndirməyə kömək edən fərdiləşdirilmiş həllər təqdim edirik. Təcrübəli peşəkarlar komandamız yüksək performanslı veb saytlar, vizual baxımdan cəlbedici dizaynlar və məlumat əsaslı marketinq strategiyaları hazırlayaraq müştərilərimizin rəqabətli bazarda fərqlənməsinə təminat verir.Biz hər bir biznesin unikal və effektiv rəqəmsal strategiyaya ehtiyacı olduğuna inanırıq və buna görə hər bir layihəyə fərdi yanaşma tətbiq edirik. Reaksiya verən veb inkişafından, istifadəçi təcrübəsinin intuitiv dizaynına, inkişaf etmiş SEO optimizasiyasından, hədəfli sosial media kampaniyalarına qədər, məqsədimiz bizneslərin böyüməsinə, daha çox müştəri cəlb etməsinə və onlayn uğurlarını artırmasına kömək etməkdir. AIM Digital Agency-də müştəri məmnuniyyəti bizim ən yüksək prioritetimizdir və biz davamlı təsir yaradan innovativ və nəticəyə yönəlmiş həllər təqdim etməyə həsr olunmuşuq."
   },
 
-  "OurPromises": [
-    {
-      "id": 1,
-      "title": "Əlaqə",
-      "text": "Hər iki tərəf arasında aydın əlaqə, birgə işləmək, böyümək və irəliləmək üçün bizə imkan yaradır. Həmişə vaxtında və aydın şəkildə əlaqə saxlayacağımıza söz veririk."
-    },
-    {
-      "id": 2,
-      "title": "Şəffaflıq",
-      "text": "Yaxşı və ya pis xəbərlər olsun, biz həmişə dürüst şəkildə əlaqə saxlayacağımıza və verilən seçimlər və nəticələr üçün səbəbləri izah edəcəyimizə söz veririk."
-    },
-    {
-      "id": 3,
-      "title": "Peşəkarlıq",
-      "text": "Bütün məsləhət və seçimlərimizin hər zaman təcrübəli peşəkarlardan gələn saf niyyətlərlə və xarici təsirləri nəzərə alaraq veriləcəyinə söz veririk."
-    },
-    {
-      "id": 4,
-      "title": "Həvəs",
-      "text": "Sevdiyinizi edərkən ən yaxşı tərəfiniz ortaya çıxır. Bizə həvəsinizi danışın, biz də öz həvəsimizlə bunu gücləndirəcəyimizə söz veririk."
-    }
-  ],
+  "OurPromises": {
+    "promiseTitle": "Bizim sizə olan vədlərimiz",
+    "list": [
+      {
+        "id": 1,
+        "title": "Əlaqə",
+        "text": "Hər iki tərəf arasında aydın əlaqə, birgə işləmək, böyümək və irəliləmək üçün bizə imkan yaradır. Həmişə vaxtında və aydın şəkildə əlaqə saxlayacağımıza söz veririk.",
+        "icon": "/promises-icon-1.svg"
+      },
+      {
+        "id": 2,
+        "title": "Şəffaflıq",
+        "text": "Yaxşı və ya pis xəbərlər olsun, biz həmişə dürüst şəkildə əlaqə saxlayacağımıza və verilən seçimlər və nəticələr üçün səbəbləri izah edəcəyimizə söz veririk.",
+        "icon": "/promises-icon-2.svg"
+      },
+      {
+        "id": 3,
+        "title": "Peşəkarlıq",
+        "text": "Bütün məsləhət və seçimlərimizin hər zaman təcrübəli peşəkarlardan gələn saf niyyətlərlə və xarici təsirləri nəzərə alaraq veriləcəyinə söz veririk.",
+        "icon": "/promises-icon-3.svg"
+      },
+      {
+        "id": 4,
+        "title": "Həvəs",
+        "text": "Sevdiyinizi edərkən ən yaxşı tərəfiniz ortaya çıxır. Bizə həvəsinizi danışın, biz də öz həvəsimizlə bunu gücləndirəcəyimizə söz veririk.",
+        "icon": "/promises-icon-4.svg"
+      }
+    ]
+  },
 
   "Footer": {
     "quote": "“Uğur qazanmaq üçün müəyyən bir məqsədiniz olmalıdır.” – Napoleon Hill",

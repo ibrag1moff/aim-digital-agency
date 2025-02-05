@@ -45,20 +45,20 @@
     "title": "Our Services",
     "list": [
       {
-        "id": 1,
-        "title": "UI/UX Design",
+        "id": "branding",
+        "title": "Branding",
         "text": "A website can have different objectives. There are websites that inform, we...",
         "icon": "/services-icon-1.svg"
       },
       {
-        "id": 2,
+        "id": "web_development",
         "title": "Web Development",
         "text": "A website can have different objectives. There are websites that inform, we...",
         "icon": "/services-icon-2.svg"
       },
       {
-        "id": 3,
-        "title": "SMM",
+        "id": "search_engine_optimization",
+        "title": "SEO",
         "text": "A website can have different objectives. There are websites that inform, we...",
         "icon": "/services-icon-3.svg"
       }
@@ -185,32 +185,38 @@
   "AboutHero": {
     "title": "We are AIM Team",
     "aboutTitle": "AIM Digital Agency",
-    "text": "AIM Digital Agency, based in Baku, Azerbaijan, is committed to helping businesses establish a strong digital presence and achieve their goals. We specialize in website development, UI/UX design, SEO, and digital marketing, providing customized solutions that enhance brand visibility and drive engagement. Our team of experienced professionals focuses on creating high-performance websites, visually compelling designs, and data-driven marketing strategies to ensure our clients stand out in a competitive market.We believe that every business deserves a unique and effective digital strategy, which is why we take a personalized approach to each project. From responsive web development and intuitive user experiences to advanced SEO optimization and targeted social media campaigns, our goal is to help businesses grow, attract more customers, and increase their online success. At AIM Digital Agency, customer satisfaction is our top priority, and we are dedicated to delivering innovative and results-oriented solutions that make a lasting impact.",
-    "promiseTitle": "Our promises to you"
+    "text": "AIM Digital Agency, based in Baku, Azerbaijan, is committed to helping businesses establish a strong digital presence and achieve their goals. We specialize in website development, UI/UX design, SEO, and digital marketing, providing customized solutions that enhance brand visibility and drive engagement. Our team of experienced professionals focuses on creating high-performance websites, visually compelling designs, and data-driven marketing strategies to ensure our clients stand out in a competitive market.We believe that every business deserves a unique and effective digital strategy, which is why we take a personalized approach to each project. From responsive web development and intuitive user experiences to advanced SEO optimization and targeted social media campaigns, our goal is to help businesses grow, attract more customers, and increase their online success. At AIM Digital Agency, customer satisfaction is our top priority, and we are dedicated to delivering innovative and results-oriented solutions that make a lasting impact."
   },
 
-  "OurPromises": [
-    {
-      "id": 1,
-      "title": "Communication",
-      "text": "Clear communication between both parties enables us to work together optimally, grow and move forward. We promise to always communicate in a timely and clear manner."
-    },
-    {
-      "id": 2,
-      "title": "Transparency",
-      "text": "Good or bad news, we promise to communicate honestly at all times and to give reasons for the choices and results made."
-    },
-    {
-      "id": 3,
-      "title": "Professionalism",
-      "text": "We promise that all our advice and choices are always weighed with pure intentions, by experienced professionals with a view to external influences."
-    },
-    {
-      "id": 4,
-      "title": "Passion",
-      "text": "When you do what you love, the best in you comes to the fore. Tell us about your passion, then we promise to strengthen it with ours."
-    }
-  ],
+  "OurPromises": {
+    "promiseTitle": "Our promises to you",
+    "list": [
+      {
+        "id": 1,
+        "title": "Communication",
+        "text": "Clear communication between both parties enables us to work together optimally, grow and move forward. We promise to always communicate in a timely and clear manner.",
+        "icon": "/promises-icon-1.svg"
+      },
+      {
+        "id": 2,
+        "title": "Transparency",
+        "text": "Good or bad news, we promise to communicate honestly at all times and to give reasons for the choices and results made.",
+        "icon": "/promises-icon-2.svg"
+      },
+      {
+        "id": 3,
+        "title": "Professionalism",
+        "text": "We promise that all our advice and choices are always weighed with pure intentions, by experienced professionals with a view to external influences.",
+        "icon": "/promises-icon-3.svg"
+      },
+      {
+        "id": 4,
+        "title": "Passion",
+        "text": "When you do what you love, the best in you comes to the fore. Tell us about your passion, then we promise to strengthen it with ours.",
+        "icon": "/promises-icon-4.svg"
+      }
+    ]
+  },
 
   "Footer": {
     "quote": "“To succeed, you must have a definite aim.” – Napoleon Hill",

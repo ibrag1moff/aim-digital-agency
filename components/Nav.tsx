@@ -9,6 +9,7 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { LuPhoneCall } from "react-icons/lu";
 import { GrClose } from "react-icons/gr";
 import { IoMdContact } from "react-icons/io";
+import { FaInstagram, FaLinkedin, FaYoutube, FaTelegram } from "react-icons/fa";
 
 // motion
 import { motion } from "framer-motion";
@@ -80,6 +81,10 @@ export default function Nav() {
   });
 
   useEffect(() => {
+    window.addEventListener("scroll", () => setNavActive(false));
+  });
+
+  useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY >= 300) {
         setNavScroll(true);
@@ -110,7 +115,7 @@ export default function Nav() {
         className="flex items-center justify-between max-w-[1240px] mx-auto"
       >
         <div className="flex items-center gap-[50px]">
-          <Link href="/">
+          <Link className="relative z-10" href="/">
             <svg
               width="139"
               height="53"
@@ -278,21 +283,56 @@ export default function Nav() {
           <div
             className={
               navActive
-                ? "fixed top-0 left-0 bottom-0 right-0 w-full h-1/2 border rounded-xl bg-black transition-all duration-300"
-                : "fixed top-[-100%] left-0 bottom-0 right-0 w-full h-1/2 border rounded-xl bg-black transition-all duration-300"
+                ? "fixed top-0 left-0 bottom-0 right-0 w-full h-full border rounded-xl bg-black transition-all  p-4 duration-300"
+                : "fixed top-0 left-[-100%] bottom-0 right-0 w-full h-full border rounded-xl bg-black transition-all duration-300"
             }
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex flex-col items-center justify-center gap-4 h-full">
+            <div className="flex flex-col items-center justify-center gap-4 h-1/2 mt-20">
               {navLinks.map((link: NavLink) => (
                 <Link
-                  className="font-semibold font-2xl"
+                  className="font-semibold text-2xl border-b border-[#333]  w-full pb-4"
                   key={link.id}
                   href={link.href}
+                  onClick={() => setNavActive(false)}
                 >
                   {link.title}
                 </Link>
               ))}
+            </div>
+            <div className="flex items-center gap-4">
+              <motion.button
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.3 }}
+                className="bg-white p-2 rounded-full"
+              >
+                <FaInstagram fill="#5929BC" size={30} />
+              </motion.button>
+              <motion.button
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.3 }}
+                className="bg-white p-2 rounded-full"
+              >
+                <FaLinkedin fill="#5929BC" size={30} />
+              </motion.button>
+              <motion.button
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.3 }}
+                className="bg-white p-2 rounded-full"
+              >
+                <FaYoutube fill="#5929BC" size={30} />
+              </motion.button>
+              <motion.button
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.3 }}
+                className="bg-white p-2 rounded-full"
+              >
+                <FaTelegram fill="#5929BC" size={30} />
+              </motion.button>
             </div>
           </div>
         </div>

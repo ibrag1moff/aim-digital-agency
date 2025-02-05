@@ -1,5 +1,5 @@
 export interface Service {
-  id: number;
+  id: string;
   title: string;
   text: string;
   icon: string;
@@ -26,4 +26,11 @@ export interface FooterLinks {
   id: number;
   title: string;
   href: string;
+}
+
+export interface OurPromises {
+  id: number;
+  title: string;
+  text: string;
+  icon: string;
 }
